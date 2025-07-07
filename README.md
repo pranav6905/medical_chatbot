@@ -52,3 +52,34 @@ medical-chatbot/
 
 All answers are strictly retrieved from: **[The Gale Encyclopedia of Medicine (PDF)](https://github.com/pranav6905/medical_chatbot/blob/main/data/The_GALE_ENCYCLOPEDIA_of_MEDICINE_SECOND.pdf)**  
 *A comprehensive medical reference covering thousands of diseases, treatments, and symptoms.*
+
+##  Create Vector Memory
+
+Run the following script to generate the vector database:
+
+```bash
+python creating_memory.py
+```
+
+## Run the Chatbot
+
+Start the chatbot locally using:
+
+```bash
+streamlit run medibot.py
+```
+
+## Environment Variables
+
+Make sure your .env file includes:
+
+```bash
+HUGGINGFACEHUB_ACCESS_TOKEN = your_huggingface_token_here
+```
+
+ ## Example Prompt
+
+```bash
+User: tell me about Diverticulosis and diverticulitis  
+Chatbot: Diverticulosis and diverticulitis are related conditions that affect the large intestine...
+```
